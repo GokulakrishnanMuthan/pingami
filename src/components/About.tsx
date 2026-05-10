@@ -4,10 +4,9 @@
  */
 
 import { motion } from 'motion/react';
+import photographerImage from '../assets/about/jithin.png';
 
 export default function About() {
-  const photographerImage = "https://images.unsplash.com/photo-1603575448878-868a20723f5d?auto=format&fit=crop&q=80&w=2070";
-
   return (
     <section id="about" className="py-24 md:py-32 px-8 md:px-16 bg-black text-white overflow-hidden">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">

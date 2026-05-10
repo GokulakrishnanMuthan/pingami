@@ -14,12 +14,12 @@ export default function Hero() {
     <section id="hero" className="relative h-screen w-full flex items-center overflow-hidden bg-black">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <motion.img 
+        <motion.img
           initial={{ scale: 1.1, opacity: 0.8 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 10, ease: "linear" }}
           src={heroImage}
-          alt="Hero Portrait" 
+          alt="Hero Portrait"
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover object-center"
         />
@@ -44,25 +44,23 @@ export default function Hero() {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-8 md:px-16 text-white pt-20">
-        <motion.div 
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-8 md:px-16 text-white pt-20 mb-6">
+        <motion.div
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
           className="max-w-2xl"
         >
-          <span className="text-xs tracking-[0.4em] uppercase text-gray-400 font-space block mb-4">
-            Frames That Feel Alive
-          </span>
-          
-          <h1 className="hero-title text-7xl md:text-9xl font-serif mb-8 flex flex-col tracking-tight uppercase">
+
+
+          <h1 className="hero-title text-5xl md:text-9xl font-serif mb-6 flex flex-col tracking-tight uppercase">
             <span>Capturing</span>
             <span className="text-gradient">Emotion</span>
             <span>Beyond</span>
             <span>The Lens.</span>
           </h1>
 
-          <div className="flex items-center space-x-4 mb-12 text-[10px] md:text-xs tracking-[0.3em] uppercase font-space text-gray-300">
+          <div className="flex items-center space-x-4 mb-10 text-[10px] md:text-xs tracking-[0.3em] uppercase font-space text-gray-300">
             <span>Portrait</span>
             <span className="w-1 h-1 bg-brand-accent rounded-full" />
             <span>Fashion</span>
@@ -73,15 +71,15 @@ export default function Hero() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-6">
-            <a 
-              href="#portfolio" 
+            <a
+              href="#portfolio"
               className="group flex items-center justify-center gap-3 bg-brand-gradient px-10 py-5 rounded-full text-xs tracking-[0.2em] uppercase font-bold text-white hover:scale-105 transition-all duration-300 shadow-xl shadow-orange-900/20"
             >
               Explore Portfolio
               <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </a>
-            <a 
-              href="#contact" 
+            <a
+              href="#contact"
               className="group flex items-center justify-center gap-3 border border-white/30 px-10 py-5 rounded-full text-xs tracking-[0.2em] uppercase font-bold text-white hover:bg-white hover:text-black transition-all duration-300"
             >
               Book a shoot
@@ -91,19 +89,9 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Bottom Floating Elements */}
-      <div className="absolute bottom-12 left-8 md:left-16 z-20 flex items-center gap-4 text-white/50 font-space text-[10px] tracking-widest uppercase">
-        <div className="w-6 h-10 border-2 border-white/20 rounded-full flex justify-center p-1">
-          <motion.div 
-            animate={{ y: [0, 10, 0] }}
-            transition={{ repeat: Infinity, duration: 2 }}
-            className="w-1 h-2 bg-white/60 rounded-full"
-          />
-        </div>
-        <span>Scroll to explore</span>
-      </div>
 
-      <a 
+
+      <a
         href="https://wa.me/919092144241"
         target="_blank"
         rel="noopener noreferrer"

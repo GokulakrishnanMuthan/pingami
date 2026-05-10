@@ -24,16 +24,14 @@ export default function Navbar() {
     { name: 'About', href: '#about' },
     { name: 'Portfolio', href: '#portfolio' },
     { name: 'Services', href: '#services' },
-    { name: 'Reels', href: '#reels' },
     { name: 'Contact', href: '#contact' },
   ];
 
   return (
-    <header 
+    <header
       id="main-navigation"
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 px-8 py-6 md:px-16 flex justify-between items-center ${
-        isScrolled ? 'bg-black/60 backdrop-blur-md py-4' : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 px-8 py-6 md:px-16 flex justify-between items-center ${isScrolled ? 'bg-black/60 backdrop-blur-md py-4' : 'bg-transparent'
+        }`}
     >
       <div className="logo-container">
         <a href="#" className="flex flex-col">
@@ -52,9 +50,8 @@ export default function Navbar() {
           <a
             key={link.name}
             href={link.href}
-            className={`nav-link relative text-[11px] uppercase tracking-widest font-space transition-colors hover:text-white group ${
-              link.name === 'Home' ? 'text-white' : 'text-gray-300'
-            }`}
+            className={`nav-link relative text-[11px] uppercase tracking-widest font-space transition-colors hover:text-white group ${link.name === 'Home' ? 'text-white' : 'text-gray-300'
+              }`}
           >
             {link.name}
             {link.name === 'Home' && (
@@ -67,8 +64,8 @@ export default function Navbar() {
 
       {/* Action Buttons */}
       <div className="hidden md:flex items-center space-x-6">
-        <a 
-          href="#contact" 
+        <a
+          href="#contact"
           className="px-6 py-2 border border-white/30 rounded-full text-[11px] uppercase tracking-widest text-white hover:bg-white hover:text-black transition-all flex items-center gap-2 group font-space"
         >
           Book a shoot
@@ -79,13 +76,11 @@ export default function Navbar() {
             <ArrowRight size={14} />
           </motion.span>
         </a>
-        <button className="text-white hover:text-orange-400 transition-colors">
-          <Menu size={24} />
-        </button>
+
       </div>
 
       {/* Mobile Toggle only */}
-      <button 
+      <button
         className="md:hidden text-white"
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
       >
