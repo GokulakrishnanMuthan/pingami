@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-space: "Space Grotesk", sans-serif;
+  
+  --color-surface: #fff8f6;
+  --color-surface-dim: #eed5cd;
+  --color-brand-accent: #ff6b35;
+  --color-accent-gradient-start: #ff6b35;
+  --color-accent-gradient-end: #e91e63;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-gray-900 font-sans selection:bg-brand-accent selection:text-white;
+  }
+}
+
+@layer utilities {
+  .tracking-widest-xl {
+    letter-spacing: 0.25em;
+  }
+  .hero-title {
+    line-height: 1;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-pink-500;
+  }
+  .bg-brand-gradient {
+    @apply bg-gradient-to-r from-orange-500 to-pink-600;
+  }
+}
