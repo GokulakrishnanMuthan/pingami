@@ -41,7 +41,9 @@ export default function Contact() {
               <span className="w-12 h-12 bg-surface rounded-full flex items-center justify-center text-brand-accent border border-surface-dim shadow-sm">
                 <Mail size={20} />
               </span>
-              <span className="text-gray-800 font-medium font-space">hello@pingami.studio</span>
+              <a href="mailto:pingamiphotography@gmail.com" className="text-gray-800 font-medium font-space hover:text-brand-accent transition-colors">
+                pingamiphotography@gmail.com
+              </a>
             </div>
             <div className="flex items-center space-x-4">
               <span className="w-12 h-12 bg-surface rounded-full flex items-center justify-center text-brand-accent border border-surface-dim shadow-sm">
