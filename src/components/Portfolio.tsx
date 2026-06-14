@@ -6,7 +6,7 @@
 import { motion } from 'motion/react';
 import celestialFashion from '../assets/portfolio/CelestialFashion.jpg';
 import eternalGaze from '../assets/portfolio/Portrait.jpg';
-import nocturnalEchoes from '../assets/portfolio/Events.jpg';
+import eventsImage from '../assets/portfolio/events.jpg';
 import silentStory from '../assets/portfolio/Candid.jpg';
 import radiantLife from '../assets/portfolio/Lifestyle.jpg';
 
@@ -29,14 +29,14 @@ const projects = [
     id: 3,
     title: "Silent Story",
     category: "Candid",
-    image: nocturnalEchoes,
+    image: silentStory,
     gridSpan: "md:col-span-1"
   },
   {
     id: 4,
     title: "Nocturnal Echoes",
     category: "Events",
-    image: silentStory,
+    image: eventsImage,
     gridSpan: "md:col-span-2"
   },
   {
