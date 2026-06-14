@@ -4,41 +4,46 @@
  */
 
 import { motion } from 'motion/react';
+import celestialFashion from '../assets/portfolio/CelestialFashion.jpg';
+import eternalGaze from '../assets/portfolio/Portrait.jpg';
+import nocturnalEchoes from '../assets/portfolio/Events.jpg';
+import silentStory from '../assets/portfolio/Candid.jpg';
+import radiantLife from '../assets/portfolio/Lifestyle.jpg';
 
 const projects = [
   {
     id: 1,
     title: "Celestial Fashion",
     category: "Fashion",
-    image: "https://www.instagram.com/p/DWt5kDkEv4t/media/?size=l",
+    image: celestialFashion,
     gridSpan: "md:col-span-1"
   },
   {
     id: 2,
     title: "Eternal Gaze",
     category: "Portrait",
-    image: "https://www.instagram.com/p/DN6RWZgEvn9/media/?size=l",
+    image: eternalGaze,
     gridSpan: "md:col-span-1"
   },
   {
     id: 3,
-    title: "Nocturnal Echoes",
-    category: "Events",
-    image: "https://www.instagram.com/p/DPZko-uD00_/media/?size=l",
+    title: "Silent Story",
+    category: "Candid",
+    image: nocturnalEchoes,
     gridSpan: "md:col-span-1"
   },
   {
     id: 4,
-    title: "The Silent Story",
-    category: "Candid",
-    image: "https://www.instagram.com/p/DXjgF6eElYy/media/?size=l",
+    title: "Nocturnal Echoes",
+    category: "Events",
+    image: silentStory,
     gridSpan: "md:col-span-2"
   },
   {
     id: 5,
     title: "Radiant Life",
     category: "Lifestyle",
-    image: "https://www.instagram.com/p/DOBEXQAEg1z/media/?size=l",
+    image: radiantLife,
     gridSpan: "md:col-span-1"
   }
 ];

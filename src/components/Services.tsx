@@ -4,27 +4,31 @@
  */
 
 import { motion } from 'motion/react';
+import portraitImage from '../assets/services/Portrait.jpg';
+import fashionImage from '../assets/services/fashion.jpg';
+import eventImage from '../assets/services/event.jpg';
+import candidImage from '../assets/services/candid.jpg';
 
 const services = [
   {
     title: "Portrait",
     description: "Capturing the essence of character through intimate and powerful photography that tells your personal story.",
-    image: "https://www.instagram.com/p/DUvx4bMkhYq/media/?size=l"
+    image: portraitImage
   },
   {
     title: "Fashion",
     description: "High-end editorial and commercial fashion photography that blends style with evocative lighting and composition.",
-    image: "https://www.instagram.com/p/DN8pvv3Eo39/media/?size=l"
+    image: fashionImage
   },
   {
     title: "Event",
     description: "Documenting your most significant moments with a cinematic eye, preserving the energy and atmosphere of your events.",
-    image: "https://www.instagram.com/p/DWt5kDkEv4t/media/?size=l"
+    image: eventImage
   },
   {
     title: "Candid",
     description: "Unscripted and raw moments captured with precision, focusing on the genuine emotions that happen when no one is watching.",
-    image: "https://www.instagram.com/p/DPZko-uD00_/media/?size=l"
+    image: candidImage
   }
 ];
 
